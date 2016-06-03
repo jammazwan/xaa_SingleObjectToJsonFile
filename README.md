@@ -27,26 +27,27 @@ This project is a code demo project - designed to isolate functionality and make
 
 ### Other notes:
 
-This page is generated. Custom notes specific to this project, if any, may be found [at NOTES.md](NOTES.md)
+This page is generated from [metadata](https://github.com/jammazwan/jammazwan.maker/blob/master/src/main/resources/xyzprojects.json). **Handwritten notes specific to this project, _if any_**, may be found [at NOTES.md](NOTES.md)
 
 Other example Camel projects like this one are indexed at [**_jammazwan.x_index_**](https://github.com/jammazwan/jammazwan.x_index)
 
-### Why the jammazwan.shared dependency project:
+### Why the _jammazwan.shared_ dependency?
 
 This design tries to move some of the clutter out of the project, 
-so you can focus only on what is required to demo the **SingleObjectToJsonFile** feature. 
-Specifically, the single shared project includes artifacts like:
+so you can focus only on what is required to demo the **SingleObjectToJsonFile** feature **_in isolation**.
+Specifically, the single shared project includes artifacts that shouldn't be unique, like:
 
- * Beans used as value objects for all projects
- * pom.xml dependencies 
+ * Beans used as value objects for all example projects
+ * pom.xml dependencies of a more general nature
  * .csv and other source files for use as data sources
  * generic utility functions not specific to a single project
 
 So you always have to git clone jammazwan.shared as a sibling first, 
-then run mvn install, before installing with this project.
+then run mvn install, before installing this project.
 
 If you want to replicate the functionality of this project into your own stand-alone project, you will need to pull some dependencies and code from each.
 
+For the record, I should have done the sibling project as a parent, but I have been repulsed by so many deep and nasty nested pom hierarchies that I refused to add even one more to the public domain. Silly, I know.
 ### Special Instructions:
 
 If there are any special instructions for this project:
