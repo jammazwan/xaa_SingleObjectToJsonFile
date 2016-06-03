@@ -7,7 +7,7 @@
 ---
 
 ### SingleObjectToJsonFile 
-##### a Camel example project:
+##### _a Camel example project_
 
 Functionality: **_Create an object and save it as json in a file_**
 
@@ -24,7 +24,7 @@ mvn install
 ```
 Now you may import this (or both) into your IDE, either via it's pom, or as a native eclipse project.
 
-This project is a code demo - designed to remove any confusion when you replicate it. See [**_this blog_**](https://betterologist.net/2016/05/jammazwan-projects-for-learning-apache-camel/) for more insights on why this was created.
+This project is a code demo designed to respect your time as a developer, and remove any confusion when you replicate it. See [**_this blog_**](https://betterologist.net/2016/05/jammazwan-projects-for-learning-apache-camel/) for more insights on why this was created.
 
 ### Other notes:
 
