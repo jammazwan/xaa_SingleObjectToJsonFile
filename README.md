@@ -6,11 +6,11 @@
 
 ---
 
-### SingleObjectToJsonFile
+### SingleObjectToJsonFile Camel example project:
 
-**_Create an object and save it as json in a file_**
+Functionality: **_Create an object and save it as json in a file_**
 
-From your workspace directory, git clone both this and it's sibling, then mvn install it's sibling. 
+Instructions: _From your workspace directory, git clone both this and it's sibling, then mvn install it's sibling._
 
 _from your bash shell:_
 
@@ -34,7 +34,13 @@ Other example Camel projects like this one are indexed at [**_jammazwan.x_index_
 ### Why the jammazwan.shared dependency project:
 
 This design tries to move some of the clutter out of the project, 
-so you can focus only on what is required to demo the **SingleObjectToJsonFile** feature.
+so you can focus only on what is required to demo the **SingleObjectToJsonFile** feature. 
+Specifically, the single shared project includes artifacts like:
+
+ * Beans used as value objects for all projects
+ * pom.xml dependencies 
+ * .csv and other source files for use as data sources
+ * generic utility functions not specific to a single project
 
 So you always have to git clone jammazwan.shared as a sibling first, 
 then run mvn install, before installing with this project.
@@ -49,4 +55,6 @@ be careful not to ever do the wrong thing, it could be incorrect. Do the right t
 
 ### other notes
 
-The prefix xaa is used for maintaining sort order in a directory, providing packaging, and is otherwise meaningless
+The prefix **xaa** is used for maintaining sort order in a directory, providing packaging, and is otherwise meaningless. The x stands for _example_.
+
+This an all other [jammazwan projects](https://github.com/jammazwan) were written in Apache Camel
