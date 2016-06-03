@@ -8,22 +8,45 @@
 
 ### SingleObjectToJsonFile
 
-Description: **_Create an object and save it as json in a file_**
+**_Create an object and save it as json in a file_**
 
-Welcome to SingleObjectToJsonFile
+From your workspace directory, git clone both this and it's sibling, then mvn install it's sibling. 
 
-The prefix xaa is used for maintaining sort order in a directory, providing packaging, and is otherwise meaningless
+_from your bash shell:_
 
-This project is a code demo project - designed to isolate functionality and make it easy replicate-able. link here to blog on same.
+```bash
+cd yourworkspacedirectory
+git clone https://github.com/jammazwan/jammazwan.shared.git
+git clone https://github.com/jammazwan/xaa_SingleObjectToJsonFile.git
+cd jammazwan.shared
+mvn install 
+```
+Now you may import this (or both) into your IDE via it's or as an eclipse project.
 
+This project is a code demo project - designed to isolate functionality and make it easy replicate-able. See [**_this blog_**](https://betterologist.net/2016/05/jammazwan-projects-for-learning-apache-camel/) for more insights on why this was created.
 
-### Dependencies, First:
+### Other notes:
 
-__Relax!__ This project runs __almost__ all by itself! No huge web of parent poms to obfuscate dependencies and make learning hard to replicate.
+This page is generated. Custom notes specific to this project, if any, may be found [at NOTES.md](NOTES.md)
 
-But it does have *one* common dependency which it shares with other jammazwan code examples. 
+Other example Camel projects like this one are indexed at [**_jammazwan.x_index_**](https://github.com/jammazwan/jammazwan.x_index)
+
+### Why the jammazwan.shared dependency project:
+
 This design tries to move some of the clutter out of the project, 
 so you can focus only on what is required to demo the **SingleObjectToJsonFile** feature.
 
-So you always have to git clone jammazwan.shared into the same folder first, 
-then run mvn install on that first, before messing with this project.
+So you always have to git clone jammazwan.shared as a sibling first, 
+then run mvn install, before installing with this project.
+
+If you want to replicate the functionality of this project into your own stand-alone project, you will need to pull some dependencies and code from each.
+
+### Special Instructions:
+
+If there are any special instructions for this project:
+
+be careful not to ever do the wrong thing, it could be incorrect. Do the right thing instead
+
+### other notes
+
+The prefix xaa is used for maintaining sort order in a directory, providing packaging, and is otherwise meaningless
