@@ -50,12 +50,12 @@ If you want to replicate the functionality of this project into your own stand-a
 For the record, I should have done the sibling project as a parent, but I have been repulsed by so many deep and nasty nested pom hierarchies that I refused to add even one more to the public domain. Silly, I know.
 ### Special Instructions:
 
-If there are any special instructions for this project:
+If there are any special instructions for this project from the metadata:
 
-be careful not to ever do the wrong thing, it could be incorrect. Do the right thing instead
+_be careful not to ever do the wrong thing, it could be incorrect. Do the right thing instead_
 
 ### other notes
 
 The prefix **xaa** is used for maintaining sort order in a directory, providing packaging, and is otherwise meaningless. The x stands for _example_.
 
-This an all other [jammazwan projects](https://github.com/jammazwan) were written in Apache Camel
+This and all other [jammazwan projects](https://github.com/jammazwan) were written in Apache Camel, mostly with [camel-velocity](http://camel.apache.org/velocity.html).
