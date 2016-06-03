@@ -6,7 +6,8 @@
 
 ---
 
-### SingleObjectToJsonFile Camel example project:
+### SingleObjectToJsonFile 
+##### a Camel example project:
 
 Functionality: **_Create an object and save it as json in a file_**
 
@@ -21,9 +22,9 @@ git clone https://github.com/jammazwan/xaa_SingleObjectToJsonFile.git
 cd jammazwan.shared
 mvn install 
 ```
-Now you may import this (or both) into your IDE via it's or as an eclipse project.
+Now you may import this (or both) into your IDE, either via it's pom, or as a native eclipse project.
 
-This project is a code demo project - designed to isolate functionality and make it easy replicate-able. See [**_this blog_**](https://betterologist.net/2016/05/jammazwan-projects-for-learning-apache-camel/) for more insights on why this was created.
+This project is a code demo - designed to remove any confusion when you replicate it. See [**_this blog_**](https://betterologist.net/2016/05/jammazwan-projects-for-learning-apache-camel/) for more insights on why this was created.
 
 ### Other notes:
 
@@ -33,9 +34,9 @@ Other example Camel projects like this one are indexed at [**_jammazwan.x_index_
 
 ### Why the _jammazwan.shared_ dependency?
 
-This design tries to move some of the clutter out of the project, 
-so you can focus only on what is required to demo the **SingleObjectToJsonFile** feature **_in isolation**.
-Specifically, the single shared project includes artifacts that shouldn't be unique, like:
+This design tries to include only what is unique to this example, 
+so you can focus only on what is required to demo the **SingleObjectToJsonFile** feature **_in isolation_**.
+The single shared project includes dumb artifacts that shouldn't be unique, like:
 
  * Beans used as value objects for all example projects
  * pom.xml dependencies of a more general nature
@@ -47,7 +48,8 @@ then run mvn install, before installing this project.
 
 If you want to replicate the functionality of this project into your own stand-alone project, you will need to pull some dependencies and code from each.
 
-For the record, I should have done the sibling project as a parent, but I have been repulsed by so many deep and nasty nested pom hierarchies that I refused to add even one more to the public domain. Silly, I know.
+For the record, I should have done the sibling project as a parent, but I have been repulsed by so many deep and nasty nested pom hierarchies that I refused to add even one more parent pom to the public domain. Silly, I know.
+
 ### Special Instructions:
 
 If there are any special instructions for this project from the metadata:
