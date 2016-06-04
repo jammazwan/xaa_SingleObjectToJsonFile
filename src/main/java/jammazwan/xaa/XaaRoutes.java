@@ -8,10 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class XaaRoutes extends RouteBuilder {
 
-    @Autowired
-    private XaaBean xaaBean;
-    @Autowired
-    private XaaProcessor xaaProcessor;
+    @Autowired private XaaBean xaaBean;
+    
 
     @Override
     public void configure() throws Exception {
