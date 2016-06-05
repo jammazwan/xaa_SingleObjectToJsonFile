@@ -5,8 +5,7 @@ import org.junit.Test;
 import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import jammazwan.City;
-import jammazwan.raw.CityPojo;
+import jammazwan.entity.City;
 
 public class XaaTest extends CamelSpringTestSupport {
 
@@ -17,7 +16,7 @@ public class XaaTest extends CamelSpringTestSupport {
 
 	@Test
 	public void testCityToJson() throws Exception {
-		City city = new CityPojo(1, "Austin, TX", "USA", 1234567, 123, 12345);
+		City city = new City(1, "Austin, TX", "USA", 1234567, 123, 12345);
 		String reply = template.requestBody("direct:xaa", city, String.class);
 		assertTrue(reply.contains("\"city\" : \"Austin, TX\""));
 	}
