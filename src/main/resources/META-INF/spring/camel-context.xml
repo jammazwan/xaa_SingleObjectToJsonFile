@@ -9,8 +9,8 @@
 	
 	<context:component-scan base-package="jammazwan.xaa" />
     
+    <bean id="xaaProcessor" class="jammazwan.xaa.XaaProcessor"/>
     
-    <bean id="xaaBean" class="jammazwan.xaa.XaaBean"/>
     <bean id="xaaRoutes" class="jammazwan.xaa.XaaRoutes"/>
 
     <camelContext id="xaa" xmlns="http://camel.apache.org/schema/spring">
