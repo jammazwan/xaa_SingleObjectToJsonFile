@@ -60,4 +60,4 @@ _run XaaTest and look for a city.json to be produced fresh in the root of this p
 
 The prefix **xaa** is used for maintaining sort order in a directory, providing packaging, and is otherwise meaningless. The x stands for _example_.
 
-This and all other [jammazwan projects](https://github.com/jammazwan) were written in Apache Camel with [jammazwan.maker](https://github.com/jammazwan/jammazwan.maker), which in turn uses [camel-velocity](http://camel.apache.org/velocity.html). [jammazwan.maker](https://github.com/jammazwan/jammazwan.maker)
+This and all other [jammazwan projects](https://github.com/jammazwan) were written in Apache Camel with [jammazwan.maker](https://github.com/jammazwan/jammazwan.maker), which in turn uses [camel-velocity](http://camel.apache.org/velocity.html).
