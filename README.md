@@ -9,7 +9,7 @@
 ### SingleObjectToJsonFile 
 ##### _a Camel example project_
 
-Functionality: **_Create an object and save it as json in a file_**
+Functionality: **_Create an object, and save it as json in a file_**
 
 Instructions: _From your workspace directory, git clone both this and it's sibling, then mvn install it's sibling._
 
@@ -52,9 +52,9 @@ For the record, I should have done the sibling project as a parent, but I have b
 
 ### Special Instructions:
 
-If there are any special instructions for this project from the metadata:
+If there are any special instructions for this project from the [metadata](https://github.com/jammazwan/jammazwan.maker/blob/master/src/main/resources/xyzprojects.json):
 
-_be careful not to ever do the wrong thing, it could be incorrect. Do the right thing instead_
+_run XaaTest and look for a city.json to be produced fresh in the root of this project_
 
 ### other notes
 
